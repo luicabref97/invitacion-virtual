@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda Luis y Paula - Asistencia</title>
+    <link rel="shortcut icon" href="./images/Group 22.svg">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="font-fontText w-80 m-auto">
+    <a class="underline text-dorado" href="./index.html"> Volver a la invitación</a>
+    <div class="border border-gray-400 flex flex-col gap-3 p-4 m-auto w-80 mt-6 mb-4 rounded-lg">
+        <h1>Boda Luis y Paula</h1>
+        <span class="border border-gray-200"></span>
+        <div>
+            <p>18 de nov de 2022 de 15:00 - 17:00hs</p>
+            <p>Hora Argentina</p>
+        </div>
+    </div>    
+    <h1 class="mb-4 font-bold">Confirmanos tu asistencia</h1>
+    <form id="form" action="https://formspree.io/f/xpznjjaq" method="POST">
+        <div class="flex flex-col gap-1 mb-4">
+            <label for="name">*Nombre</label>
+            <input class="rounded-lg border border-gray-400 p-2 focus:border-dorado" name="name" type="text" required id="name" placeholder="Escribe tu nombre">
+            <label for="email">*Email</label>
+            <input class="rounded-lg border border-gray-400 p-2 focus:border-dorado" name="email" type="email" required id="email" placeholder="tu@correo.com">
+        </div>
+        <div id="nota" class="mt-2 text-xs"></div>
+        <button class="mt-4 mb-4 bg-beige w-full p-2 rounded-lg text-white active:border-2 active:border-dorado font-bold" type="submit">Enviar</button>
+    </form>
+    <div class="text-center">© 2022 by Luis Cabrera</div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="./form.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda Luis y Pau</title>
+    <link rel="shortcut icon" href="./images/Group 22.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="bg-back">
+    <div class="hidden min-w-50px min-h-50px text-sm w-12 h-12">npx tailwindcss -i ./css/main.css -o ./css/tailwind.css --watch</div>
+    <div class="flex justify-center items-center">
+        <picture>
+            <img class="min-w-340px" src="./images/Imagen3.png" alt="#">
+        </picture>
+        <div class="absolute flex flex-col justify-center items-center z-10 text-stone-700 ml-4 border-b-dorado border-b-2 rounded-full pb-3 pt-6 border-t-dorado border-t-2">
+            <h1 class="font-fontText text-lg pb-5 text-center pl-3 mr-3">¡Nos casamos!</h1>
+            <h2 class="font-fontPrincipal text-5xl text-center flex flex-col justify-center items-center pb-5 animate__animated animate__zoomInUp animate__slow"><span class="tracking-widest">Luis</span> <span>&</span> <span class="tracking-widest">Paula</span></h2>
+            <picture class="animate__animated animate__heartBeat"><img src="images/Group 22.svg" alt=""></picture>
+        </div>
+    </div>
+    <div class="font-fontText text-lg text-center py-5 px-3 text-stone-800">Y desde la distancia deseamos compartir este gran día contigo</div>
+    <div class="flex justify-center text-stone-800">
+        <div class="flex justify-center items-center flex-col border-dorado border-2 w-72 rounded-lg p-4 bg-beige gap-4 z-10">
+            <div id="cuenta" class="flex gap-4 justify-center items-center font-fontText max-w-340px mx-4">
+            </div>
+            <div class="font-fontText text-base">18 de Noviembre, 2022</div>
+        </div>
+    </div>
+    <picture class="flex justify-center relative bottom-16">
+        <img src="./images/image26.png" alt="">
+    </picture>
+    <div class="bg-pattern bg-repeat text-center flex flex-col justify-center items-center -mt-16">
+        <h2 class="font-fontPrincipal text-6xl pt-6 pb-6 max-w-340px text-center text-stone-700" data-aos="zoom-in">Brindis Virtual</h2>
+        <picture class="pb-7">
+            <img src="images/brindisv.svg" alt="">
+        </picture>
+        <div class="font-fontText flex flex-col justify-center items-center gap-5 text-stone-800">
+            <div class="text-stone-700 pb-4">
+                <h3 class="text-2xl pb-3 font-extrabold">Cuándo</h3>
+                <p class="text-lg">18 de nov 2022 de 15:00 - 17:00hs</p>
+                <p class="text-base">Hora Argentina</p>
+            </div>
+            <div class="bg-stone-700 h-0.5 w-12 mb-4"></div>
+            <div class="text-stone-700 pb-4">
+                <h3 class="text-2xl pb-3 font-extrabold">Acceso</h3>
+                <a class="text-lg w-52 text-dorado underline" href="https://meet.google.com/iur-bosb-dnx?authuser=0&pli=1" target="_blank">Link de acceso</a>
+            </div>
+            <button class="bg-dorado py-3 px-6 rounded-lg border-dorado border-2 active:bg-beige">
+                <a href="./asistencia.html" class="text-back">Confirmar asistencia</a>
+            </button>
+            <div class="pb-4">
+                <p class="text-sm px-3 min-w-340px max-w-450px">Completa con tus datos la confirmacion para ingresarte a la lista de google y quedar agendado en el calendario de tu dispositivo para una mejor experiencia</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center items-center mb-6">
+        <img class="" src="./images/image27.png" alt="#">
+    </div>
+    <div class="bg-pattern bg-repeat flex flex-col items-center justify-center pb-6">
+        <h2 class="font-fontPrincipal text-6xl max-w-450px text-center text-stone-700" data-aos="zoom-in">Lista de regalos</h2>
+        <div class="flex flex-col items-center gap-4 bg-back px-10 py-5 w-400px">
+            <picture>
+                <img src="./images/regalo.svg" alt="#">
+            </picture>
+            <p class="font-fontText text-center">Nuestro mejor regalo es que nos acompañes desde la distancia en la videollamada,<br> pero si deseas colaborar con nuestra</p>
+            <h3 class="font-fontPrincipal text-4xl max-w-450px text-center text-stone-700" data-aos="zoom-in">Luna de Miel</h3>
+            <p class="font-fontText text-center">Puedes hacernos tu presente por las siguientes vias:</p>
+            <div class="flex font-fontText gap-5">
+                <button id="wu" class="flex justify-center items-center flex-col">
+                    <img class="active:scale-110 active:transition-all" src="images/wu.svg" alt="#">
+                    
+                </button>
+                <button id="zelle" class="flex justify-center items-center flex-col">
+                    <img class="active:scale-110 active:transition-all" src="images/zelle.svg" alt="#">
+                </button>
+            </div>
+            <div class="font-fontText flex flex-col gap-2">
+                <div id="wu-datos" class="hidden flex-col border border-dorado p-1 rounded-lg animate__animated">
+                    <h3 class="text-lg font-semibold justify-center self-center">Western Union</h3>
+                    <p><strong class="font-bold">Nombre Completo:</strong> Luis Ricardo Cabrera Fernandez</p>
+                    <p><strong class="font-bold">Email:</strong> luiscabreraf2@gmail.com</p>
+                    <p><strong class="font-bold">Celular:</strong> +5491123898101</p>
+                    <p><strong class="font-bold">Direccion:</strong> Cochabamba 2156, Ciudad: San Martin. Buenos Aires, CP:1650.</p>
+                    <p><strong class="font-bold">Banco:</strong> Brubank S.A.U</p>
+                    <p><strong class="font-bold">Numero de cuenta:</strong> 1430001713000562790016</p>
+                    <p><strong class="font-bold">Identificacion Fiscal:</strong> 20959607118</p>
+                </div>
+                <div id="zelle-datos" class="hidden flex-col border border-dorado p-1 rounded-lg animate__animated">
+                    <h3 class="text-lg font-semibold justify-center self-center">Zelle</h3>
+                    <p><strong class="font-bold">Nombre:</strong> Luis Cabrera</p>
+                    <p><strong class="font-bold">Email:</strong> luiscabreraf2@gmail.com</p>
+                </div>
+                <div>
+                    <p class="text-sm text-center">Pulsa en cualquiera de las opciones para conocer los datos</p>
+                </div>
+            </div>
+        </div>
+        <picture>
+            <img src="./images/flor.png" alt="#">
+        </picture>
+        <h2 class="font-fontPrincipal text-6xl max-w-450px text-center text-stone-700" data-aos="zoom-in">Etiqueta tus fotos</h2>
+        <picture class="py-3">
+            <img src="./images/instagram.svg" alt="#">
+        </picture>
+        <div class="font-fontText bg-beige text-back py-2 px-4 text-lg">
+            <p>#bodaluisypau</p>
+        </div>
+    </div>
+    <footer class="flex flex-col justify-center items-center">
+        <picture>
+            <img src="./images/image28.png" alt="#">
+        </picture>
+        <p class="font-fontText">© 2022 by Luis Cabrera</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./simplyCountdown.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
